@@ -1,0 +1,33 @@
+#maintitle {
+	background-color: #972121;
+	margin:0 0;
+	border-radius: 0; 
+	height:100vh;
+	display:flex;
+}
+
+#logo {
+	width: 35%;
+	height: auto;
+}
+
+#subtitle {
+	background-color: #FFC700;
+	color: #972121;
+	padding: 50px 45px; 
+}
+
+#judul{
+	padding: 75px 0px;
+}
+
+#Menu{
+	background-color: #972121;
+	color: #FFC700;
+}
+
+
+.ayam{
+	max-width: 200px;
+	padding: 50px 0px;
+}
