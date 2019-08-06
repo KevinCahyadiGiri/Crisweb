@@ -21,6 +21,7 @@ var menu = {
 // END OF VARIABLES
 
 // READ FILES
+/*
 fs.readFile('menu.json','utf8',function (err,data) {
     if (err) {
         console.log(err);
@@ -28,6 +29,7 @@ fs.readFile('menu.json','utf8',function (err,data) {
         menu = JSON.parse(data);
     }
 });
+*/
 // END OF READ FILES
 
 // HOME PAGE

@@ -1,0 +1,111 @@
+#maintitle {
+	background-color: #972121;
+	margin:0 0;
+	border-radius: 0; 
+	height:88.5vh;
+	display:flex;
+}
+
+#logo {
+	width: 35%;
+	height: auto;
+}
+
+#subtitle {
+	background-color: #FFC700;
+	color: #972121;
+	padding: 50px 45px; 
+}
+
+#judul{
+	padding: 120px 0px;
+	font-family: "Forte";
+}
+
+#Menu{
+	background-color: #972121;
+	color: #FFC700;
+	font-family:"Forte";
+	padding: 69px 0px;
+}
+
+
+.ayam{
+	max-width: 200px;
+	padding: 50px 0px;
+}
+
+@font-face{
+    font-family: Forte;
+    src: url('../font/FORTE.TTF')
+}
+
+#About_Us{
+    color:#FFC700;
+    background-color: #95221F;
+    margin:0 0;
+	font-family: "Forte";
+	padding-top: 71px;
+	padding-bottom: 30px;
+	font-size: 80px;
+}
+
+#Contact_Us{
+    color:#FFC700;
+    background-color: #95221F;
+    margin:0 0;
+	font-family: "Forte";
+	padding-bottom: 35px;
+	padding-top: 69px;
+}
+
+#content{
+    padding: 50px 45px;
+    background-color:#FFC700;
+    margin:0 0;
+    color: #95221F;
+	font-family: "Lobster", cursive;
+}
+
+#jumbotron{
+    color:"#FFC700";
+    font-family: "Forte";
+}
+
+#content_2{
+    background-color:#FFC700;
+    color: #95221F;
+}
+
+.font{
+    text-indent: 50px;
+}
+
+.font_contact{
+    font-size: 193%;
+    font-family: "Arial", cursive;
+}
+
+#bottom{
+    background-color:#95221F;
+    color: #FFC700;
+    font-size: 60px;
+	font-family: "Arial", cursive;
+	padding: 20px;
+}
+
+#navbar_atas{
+	background-color: #95221F;
+}
+
+.nav-link{
+	color:#FFC700;
+}
+
+.nav-item a:hover{
+	color:#000000;
+}
+
+.hamburger-inner, .hamburger-inner::before, .hamburger-inner::after, .hamburger.is-active .hamburger-inner::before, .hamburger.is-active .hamburger-inner::after, .hamburger.is-active .hamburger-inner, .hamburger.is-active .hamburger-inner::before, .hamburger.is-active .hamburger-inner::after {
+	color: #FFC700;
+}
