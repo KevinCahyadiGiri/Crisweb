@@ -95,32 +95,12 @@
 			<strong>Our Menu</strong>
 		</div>
 		<div class="row img-fluid text-center" id="gambar_menu">
-			<div class="col-xl-3 col-md-6 tempat_ayam">
-				<img class="gambar_ayam" src=ayam.jpg>
-				<div class="tulisan_transparan">AYAM GEPREK MANIS</div>
-			</div>
-			<div class="col-xl-3 col-md-6 tempat_ayam">
-				<img class="gambar_ayam" src=ayam.jpg>
-				<div class="tulisan_transparan">AYAM GEPREK MANIS</div>
-			</div>
-			<div class="col-xl-3 col-md-6 tempat_ayam">
-				<img class="gambar_ayam" src=ayam.jpg>
-				<div class="tulisan_transparan">AYAM GEPREK MANIS</div>
-			</div>
-			<div class="col-xl-3 col-md-6 tempat_ayam">
-				<img class="gambar_ayam" src=ayam.jpg>
-				<div class="tulisan_transparan">AYAM GEPREK MANIS</div>
-			</div>
-
-			<div class="col-xl-3 col-md-6"><img class="ayam" src=ayam.jpg></div>
-			<div class="col-xl-3 col-md-6"><img class="ayam" src=ayam.jpg></div>
-			<div class="col-xl-3 col-md-6"><img class="ayam" src=ayam.jpg></div>
-			<div class="col-xl-3 col-md-6"><img class="ayam" src=ayam.jpg></div>
-
-			<div class="col-xl-3 col-md-6"><img class="ayam" src=ayam.jpg></div>
-			<div class="col-xl-3 col-md-6"><img class="ayam" src=ayam.jpg></div>
-			<div class="col-xl-3 col-md-6"><img class="ayam" src=ayam.jpg></div>
-			<div class="col-xl-3 col-md-6"><img class="ayam" src=ayam.jpg></div>
+            <% for (var i=0;i<menu.nama.length;i++) { %>
+                <div class="col-xl-3 col-md-6 tempat_ayam">
+                    <img class="gambar_ayam" src= <%= 'images/' + menu.imagename[i] %>>
+                    <div class="tulisan_transparan"> <%= menu.nama[i] %></div>
+                </div>
+            <% } %>
 		</div>
 	</div>
 

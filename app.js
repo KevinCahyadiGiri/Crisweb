@@ -33,7 +33,7 @@ var menu = {
 
 // READ AND WRITE FILES
 function readFileFunc() {
-    fs.readFile('menu.json','utf8',function (err,data) {
+    fs.readFile('database/menu.json','utf8',function (err,data) {
         if (err) {
             console.log(err);
         } else {
