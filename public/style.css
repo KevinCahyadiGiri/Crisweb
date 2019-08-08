@@ -109,3 +109,32 @@
 .hamburger-inner, .hamburger-inner::before, .hamburger-inner::after, .hamburger.is-active .hamburger-inner::before, .hamburger.is-active .hamburger-inner::after, .hamburger.is-active .hamburger-inner, .hamburger.is-active .hamburger-inner::before, .hamburger.is-active .hamburger-inner::after {
 	color: #FFC700;
 }
+
+.tempat_ayam{
+	border: 1px solid black;
+}
+
+.gambar_ayam{
+	padding: 50px 0px; 
+	width: 60%;
+	max-width: 200px;
+	height: auto;
+}
+
+.tulisan_transparan{
+	position: absolute;
+	width: 100%;
+	border: 1px solid blue;
+	top : 50%;
+	z-index: 1;
+	opacity: 0;
+}
+
+.tempat_ayam:hover .tulisan_transparan{
+	opacity: 1;	
+}
+
+.tempat_ayam:hover .gambar_ayam{
+	opacity:0.5;
+}
+
