@@ -49,6 +49,7 @@ function writeFileFunc() {
     });
 }
 
+readFileFunc(); // read file on first load
 // END OF READ AND WRITE FILES
 
 // HOME PAGE
