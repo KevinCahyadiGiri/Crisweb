@@ -1,62 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<script src='scroll.js'> </script>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 	<link href="https://fonts.googleapis.com/css?family=Lobster&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Indie+Flower&display=swap" rel="stylesheet">
-  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 	<link rel="stylesheet" type="text/css" href="hamburgers.css">
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<link rel="icon" href="./public/logo_c.ico">
-    <title>Crisweb</title>
+	<title>Crisweb</title>
 </head>
+
 <body>
 	<nav class="navbar navbar-expand-md sticky-top" id="navbar_atas">
-			<a class="navbar-brand" href="#"><img src="index.png" width=auto height=60vw></a>
-			<button class="navbar-toggler hamburger hamburger--elastic" type="button" data-toggle="collapse" data-target="#collapsible-navbar">
-				<span class="hamburger-box">
-					<span class="hamburger-inner"></span>
-					</span>
-			</button>
-			<div class="collapse navbar-collapse" id="collapsible-navbar">
-				<ul class="navbar-nav">
-					<li class="nav-item">
-						<a class="nav-link" href="#About_Us">
-							<div>
-								About
-							</div>
-						</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#Menu">
-							<div>
-								Menu
-							</div>
-						</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#Contact_Us">
-							<div>
-								Contact Us
-							</div>
-						</a>
-					</li>
-				</ul>
-			</div>  
-		</nav>
-	
+		<a class="navbar-brand" href="#"><img src="index.png" width=auto height=60vw></a>
+		<button class="navbar-toggler hamburger hamburger--elastic" type="button" data-toggle="collapse"
+			data-target="#collapsible-navbar">
+			<span class="hamburger-box">
+				<span class="hamburger-inner"></span>
+			</span>
+		</button>
+		<div class="collapse navbar-collapse" id="collapsible-navbar">
+			<ul class="navbar-nav">
+				<li class="nav-item">
+					<a class="nav-link" href="#About_Us">
+						<div>
+							About
+						</div>
+					</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#Menu">
+						<div>
+							Menu
+						</div>
+					</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#Contact_Us">
+						<div>
+							Contact Us
+						</div>
+					</a>
+				</li>
+			</ul>
+		</div>
+	</nav>
+
 
 	<script>
 		// Look for .hamburger
 		var hamburger = document.querySelector(".hamburger");
 		// On click
-		hamburger.addEventListener("click", function() {
+		hamburger.addEventListener("click", function () {
 			// Toggle class "is-active"
 			hamburger.classList.toggle("is-active");
 			// Do something else, like open/close menu
@@ -64,87 +67,72 @@
 	</script>
 
 	<div class="jumbotron" id="maintitle">
-  		<img class="mx-auto my-auto d-block align-self-center" src=index.png id="logo"></div>
+		<img class="mx-auto my-auto d-block align-self-center" src=index.png id="logo"></div>
 	<div class="container-fluid" id="subtitle">
 		<div class="display-4"><strong>Crisbar!</strong></div><br>
 		Crisbar merupakan suatu perusahaan start-up yang bergerak di bidang makanan. Makanan yang
 		disediakan adalah ayam geprek, dengan berbagai varian rasa, seperti rasa original, sambal matah,
 		crispy, crispy bakar, manis, sambal mamah, mozarella, ayam keju, sambal tomat, dan salted egg.
 		Selain itu crisbar juga menyediakan add-on berupa tempe, tahu, telor, terong, dan kerupuk. Crisbar
-		juga menyediakan free refill untuk es teh manis, sayur lalapan, dan nasi putih.	Crisbar didirikan pertama
+		juga menyediakan free refill untuk es teh manis, sayur lalapan, dan nasi putih. Crisbar didirikan pertama
 		kali di Tamansari Festival di Jalan Tamansari no. 71 Lebak Siliwangi. Setelah itu, Crisbar membuka
-		cabangnya di Jalan Cisitu Indah No 2C (Pusat), Jalan Ganesha Depan Salman, Dipatiukur (Gerbang UNPAD) 
+		cabangnya di Jalan Cisitu Indah No 2C (Pusat), Jalan Ganesha Depan Salman, Dipatiukur (Gerbang UNPAD)
 		Jalan Unjani No 245, Jalan Cibogo Bawah No 48, Jalan Sukabirus (Gerbang Masjid), Jalan Jatinangor No 228,
 		Gerbang Lama UNPAD, Pujasera Ciseke.
 	</div>
 
 	<div class="container-fluid" id="About_Us">
-        <div class="display-3 text-center">
-            <strong>About Us</strong>
-        </div>
-    </div>
+		<div class="display-3 text-center">
+			<strong>About Us</strong>
+		</div>
+	</div>
 
 	<div class="container-fluid" id="content">
 		<div class="container">
-			<div class="row"id="row">
-				<div class="col-sm-6 text-center"> 
-					<img src="filbert.png" width=40% height=auto>
-					<p><h4>Filbert</h4></p>
+			<div class="row" id="row">
+				<div class="col-sm-6 text-center">
+					<img src="filbert.png" width="40%" height="auto">
+					<p>
+						<h4>Filbert</h4>
+					</p>
 					<p>My name is Filbert. Don't know me yet?</p>
 				</div>
 				<div class="col-sm-6 text-center">
-					<img src="hafid.png" width=auto height=72%>
-					<p><h4>Hafizh Ihsanuddin</h4></p>
+					<img src="hafid.png" width="auto" height="72%">
+					<p>
+						<h4>Hafizh Ihsanuddin</h4>
+					</p>
 					<p>My name is Hafizh Ihsanuddin. Don't know me yet?</p>
 				</div>
-			</div> 
-		</div> 
+			</div>
+		</div>
 	</div>
-	
+
 	<div class="container-fluid" id="Menu">
 		<div class="display-3 text-center" id="Judul">
 			<strong>Our Menu</strong>
 		</div>
-    </div>
-    
+	</div>
+
 	<div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
 		<div class="carousel-inner size_carousel">
-		<div class="carousel-item active">
-			<img src="ayam_geprek.jpg" class="d-block w-100" alt="...">
-			<div class="carousel-caption d-md-block">
-				<h5>First slide label</h5>
-				<p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+			<div class="carousel-item active">
+				<img src=<%="images/" + menu.imagename[0] %> class="d-block w-100 img-thumbnail" alt=<%= menu.nama[i] %>>
+				<div class="carousel-caption d-md-block">
+					<h5>Menu <%= 1 %></h5>
+					<p> <%= menu.nama[0] %> </p>
+				</div>
 			</div>
+			<% for (var i=1;i<menu.nama.length;i++) { %>
+				<div class="carousel-item">
+					<img src=<%="images/" + menu.imagename[i] %> class="d-block w-100 img-thumbnail" alt=<%= menu.nama[i] %>>
+					<div class="carousel-caption d-md-block">
+						<h5>Menu <%= i+1 %></h5>
+						<p> <%= menu.nama[i] %> </p>
+					</div>
+				</div>
+			<% } %>
 		</div>
-		<div class="carousel-item">
-			<img src="ayam_geprek(2).jpg" class="d-block w-100 img-thumbnail" alt="...">
-			<div class="carousel-caption d-md-block">
-				<h5>Second slide label</h5>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-			</div>
-		</div>
-		<div class="carousel-item">
-			<img src="ayam_geprek(3).jpg" class="d-block w-100 img-thumbnail" alt="...">
-			<div class="carousel-caption d-md-block">
-				<h5>Third slide label</h5>c
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-			</div>
-		</div>
-		<div class="carousel-item">
-			<img src="ayam_geprek(4).jpg" class="d-block w-100 img-thumbnail" alt="...">
-			<div class="carousel-caption d-md-block">
-				<h5>Second slide label</h5>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-			</div>
-		</div>
-		<div class="carousel-item">
-			<img src="ayam_geprek(5).jpg" class="d-block w-100 img-thumbnail" alt="...">
-			<div class="carousel-caption d-md-block">
-				<h5>Second slide label</h5>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-			</div>
-		</div>
-	</div>
 
 		<a class="carousel-control-prev" href="#carouselExampleFade" role="button" data-slide="prev">
 			<span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -157,44 +145,48 @@
 	</div>
 
 	<div class="container-fluid" id="Contact_Us">
-        <div class="display-3 text-center">
-            <strong>Contact Us</strong>
-        </div>
+		<div class="display-3 text-center">
+			<strong>Contact Us</strong>
+		</div>
 	</div>
 
 	<div class="container-fluid" id="content_2">
 		<div class="container">
 			<div class="row" id="row_2">
-				<div class="col" >
+				<div class="col">
 					<br>
-					<p class="font_contact"><a href="tel:+6282121214145"><img src = "./public/logo/Telpon.png" width = 50vw height = auto></a>&nbsp 08212121415</p>
-					<p class="font_contact"><img src = "./public/logo/gmail.png" width = 50vw height = auto>&nbsp geprekcrisbar@gmail.com</p>
-					<p class="font_contact"><a href="http://line.me/ti/p/%40geprekcrisbar"><img src = "./public/logo/Line.jpg" width = 50vw height = auto></a>&nbsp @geprekcrisbar</p>
-					<p class="font_contact"><a href="https://api.whatsapp.com/send?phone=6282121214145"><img src = "./public/logo/Whatsapp.png" width = 50vw height = auto></a>&nbsp 082121214145</p>
+					<p class="font_contact"><a href="tel:+6282121214145"><img src="logo/Telpon.png" width=50vw
+								height=auto></a>&nbsp 08212121415</p>
+					<p class="font_contact"><img src="logo/gmail.png" width=50vw height=auto>&nbsp
+						geprekcrisbar@gmail.com</p>
+					<p class="font_contact"><a href="http://line.me/ti/p/%40geprekcrisbar"><img src="logo/Line.jpg"
+								width=50vw height=auto></a>&nbsp @geprekcrisbar</p>
+					<p class="font_contact"><a href="https://api.whatsapp.com/send?phone=6282121214145"><img
+								src="logo/Whatsapp.png" width=50vw height=auto></a>&nbsp 082121214145</p>
 				</div>
 			</div>
 		</div>
-	</div> 
+	</div>
 	<div class="container-fluid" id="bottom">
-		<div class = "row justify-content-center">
-			<div class = "col-sm-6 col-md-4 col-lg-4 text-center">
+		<div class="row justify-content-center">
+			<div class="col-sm-6 col-md-4 col-lg-4 text-center">
 				<p>CONNECT</p>
 			</div>
-			<div class = "col-sm-6 col-md-4 col-lg-4 text-center">
-				<div class = "row">
+			<div class="col-sm-6 col-md-4 col-lg-4 text-center">
+				<div class="row">
 					<div class="col-sm-4 col-md-4 col-lg-4 text-center">
-					<a href="https://www.instagram.com/geprekcrisbar/">
-						<img src = "./public/logo/instagram.png" width = 90vw height=auto>
-					</a>
+						<a href="https://www.instagram.com/geprekcrisbar/">
+							<img src="logo/instagram.png" width=90vw height=auto>
+						</a>
 					</div>
 					<div class="col-sm-4 col-md-4 col-lg-4 text-center">
 						<a href="https://www.facebook.com/geprekcrisbar/">
-						<img src = "./public/logo/Facebook.png" width = 90vw height=auto>
+							<img src="logo/Facebook.png" width=90vw height=auto>
 						</a>
 					</div>
 					<div class="col-sm-4 col-md-4 col-lg-4 text-center">
 						<a href=" https://www.linkedin.com/company/ayam-geprek-crisbar/">
-						<img src = "./public/logo/Linkedin.png" width = 90vw height=auto>
+							<img src="logo/Linkedin.png" width=90vw height=auto>
 						</a>
 					</div>
 				</div>
@@ -202,4 +194,5 @@
 		</div>
 	</div>
 </body>
+
 </html>

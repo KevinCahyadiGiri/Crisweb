@@ -39,6 +39,7 @@ function readFileFunc() {
         } else {
             menu = JSON.parse(data);
         }
+        console.log(menu);
     });
 }
 
