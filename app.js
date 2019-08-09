@@ -43,7 +43,6 @@ function readFileFunc() {
         } else {
             menu = JSON.parse(data);
         }
-        console.log(menu);
     });
     fs.readFile('database/promo.json','utf8',function (err,data) {
         if (err) {
@@ -51,18 +50,17 @@ function readFileFunc() {
         } else {
             promo = JSON.parse(data);
         }
-        console.log(promo);
     });
 }
 
 function writeFileFunc() {
     var json = JSON.stringify(menu);
     fs.writeFile('database/menu.json',json,'utf8',function(req,res) {
-        console.log(json);
+        //console.log(json);
     });
     json = JSON.stringify(promo);
     fs.writeFile('database/promo.json',json,'utf8',function(req,res) {
-        console.log(json);
+        //console.log(json);
     });
 }
 
