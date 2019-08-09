@@ -37,7 +37,11 @@
 
 @font-face{
     font-family: Forte;
-    src: url('../public/font/FORTE.TTF')
+    src: url('font/FORTE.TTF')
+}
+
+.redcolor {
+	background-color: #95221F;
 }
 
 #About_Us{
@@ -51,8 +55,8 @@
 }
 
 #Contact_Us{
-    color:#FFC700;
-    background-color: #95221F;
+    background-color:#FFC700;
+	color: #95221F;
     margin:0 0;
 	font-family: "Forte";
 	padding-bottom: 35px;
