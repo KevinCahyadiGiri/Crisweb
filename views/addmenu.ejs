@@ -16,7 +16,7 @@
     <title>Crisweb</title>
 </head>
 <body>
-	<nav class="navbar navbar-expand-md sticky-top" id="navbar_atas">
+	<!-- <nav class="navbar navbar-expand-md sticky-top" id="navbar_atas">
 			<a class="navbar-brand" href="#"><img src="index.png" width=auto height=60vw></a>
 			<button class="navbar-toggler hamburger hamburger--elastic" type="button" data-toggle="collapse" data-target="#collapsible-navbar">
 				<span class="hamburger-box">
@@ -36,8 +36,21 @@
 					</li>
 				</ul>
 			</div>  
-		</nav>
-	
+	</nav> -->
+
+	<div class="top">
+		<form action='/addmenu' method='post' enctype='multipart/form-data' class="form-inline form" >
+			<div class="form-group mb-2 ">
+					<input type="file" readonly class="form-control-plaintext" name='photo' accept='image/*'>
+			</div>
+			<div class="form-group mx-sm-3 mb-2">
+				<input type="text" name="nama" class="form-control" placeholder="Nama Menu">
+			</div>
+			<button type="submit" value='upload' class="btn btn-outline-warning mb-2" id='button'>Submit</button>
+		</form>	
+	</div>
+		
+
 
 	<script>
 		// Look for .hamburger
@@ -52,6 +65,8 @@
 
 	<div class="jumbotron" id="maintitle">
           <img class="mx-auto my-auto d-block align-self-center" src=index.png id="logo">
+<<<<<<< HEAD
+=======
     </div>
     <form action="/addmenu" method="post" enctype="multipart/form-data">
         <input type="file" name="photo" accept="image/*">
@@ -63,44 +78,9 @@
         <div class="display-3 text-center">
             <strong>Contact Us</strong>
         </div>
+>>>>>>> 41f92fe7990bfaf62999cfe8f1c52b01ed5046c0
 	</div>
+	
 
-	<div class="container-fluid" id="content_2">
-		<div class="container">
-			<div class="row" id="row_2">
-				<div class="col" >
-					<br>
-					<p class="font_contact"><img src = "./logo/Telpon.png" width = 50vw height = auto>&nbsp Telepon</p>
-					<p class="font_contact"><img src = "./logo/gmail.png" width = 50vw height = auto>&nbsp Email</p>
-					<p class="font_contact"><img src = "./logo/Line.jpg" width = 50vw height = auto>&nbsp Line</p>
-					<p class="font_contact"><img src = "./logo/Whatsapp.png" width = 50vw height = auto>&nbsp Whatsapp</p>
-				</div>
-			</div>
-		</div>
-	</div> 
-	<div class="container-fluid" id="bottom">
-		<div class = "row justify-content-center">
-			<div class = "col-sm-6 col-md-4 col-lg-4 text-center">
-				<p>CONNECT</p>
-			</div>
-			<div class = "col-sm-6 col-md-4 col-lg-4 text-center">
-				<div class = "row">
-					<div class="col-sm-4 col-md-4 col-lg-4 text-center">
-					<a href="https://www.instagram.com/geprekcrisbar/">
-						<img src = "./logo/instagram.png" width = 90vw height=auto>
-					</a>
-					</div>
-					<div class="col-sm-4 col-md-4 col-lg-4 text-center">
-						<a href="https://www.facebook.com/geprekcrisbar/">
-						<img src = "./logo/Facebook.png" width = 90vw height=auto>
-						</a>
-					</div>
-					<div class="col-sm-4 col-md-4 col-lg-4 text-center">
-						<img src = "./logo/Linkedin.png" width = 90vw height = auto>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
 </body>
 </html>
