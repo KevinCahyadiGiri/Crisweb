@@ -168,11 +168,24 @@ html {
 	.padbot {
 		padding-bottom: 40%;
 	}
+
+	.blacked {
+		font-size: 75%; 
+	}
+
+	.shrink {
+		font-size: 40px;
+	}
+
+	.kntl {
+		height: auto;
+		width: 60px;
+	}
 }
 
 @media screen and (max-width: 600px) {
 	.font_contact{
-		font-size : 130%;
+		font-size : 120%;
 	}
 }
 
@@ -201,4 +214,10 @@ html {
 }
 .blacked {
 	background-color: rgba(0,0,0,0.6);
+}
+
+#main_promo{
+	background-color: #95221F;
+	color: #FFC700;
+	font-family: "Forte";
 }
