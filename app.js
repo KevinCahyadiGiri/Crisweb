@@ -27,11 +27,11 @@ app.use(express.static("public"));
 // VARIABLES
 var menu = {
     imagename: [],
-    nama: []
+    nama: [],
+    deskripsi: []
 };
 var promo = {
-    imagename: [],
-    nama: []
+    imagename: []
 };
 // END OF VARIABLES
 
@@ -43,7 +43,6 @@ function readFileFunc() {
         } else {
             menu = JSON.parse(data);
         }
-        console.log(menu);
     });
     fs.readFile('database/promo.json','utf8',function (err,data) {
         if (err) {
@@ -51,18 +50,17 @@ function readFileFunc() {
         } else {
             promo = JSON.parse(data);
         }
-        console.log(promo);
     });
 }
 
 function writeFileFunc() {
     var json = JSON.stringify(menu);
     fs.writeFile('database/menu.json',json,'utf8',function(req,res) {
-        console.log(json);
+        //console.log(json);
     });
     json = JSON.stringify(promo);
     fs.writeFile('database/promo.json',json,'utf8',function(req,res) {
-        console.log(json);
+        //console.log(json);
     });
 }
 
@@ -72,9 +70,16 @@ readFileFunc(); // read file on first load
 // HOME PAGE
 app.get("/",function(req,res) {
     readFileFunc();
-    res.render("index",{menu:menu,promo:promo});
+    res.render("index",{menu:menu});
 });
 // END OF HOME PAGE
+
+// PROMO PAGE
+app.get("/viewpromo",function(req,res) {
+    readFileFunc();
+    res.render("viewpromo",{promo:promo});
+})
+// END OF PROMO PAGE
 
 // ADD MENU
 app.get("/addmenu",function(req,res) {
@@ -83,6 +88,7 @@ app.get("/addmenu",function(req,res) {
 app.post("/addmenu",upload.single('photo'), (req,res) => {
     menu.imagename.push(req.file.filename);
     menu.nama.push(req.body.nama);
+    menu.deskripsi.push(req.body.deskripsi);
     console.log(req.file);
     writeFileFunc();
     res.redirect("/");
@@ -95,7 +101,6 @@ app.get("/addpromo",function(req,res) {
 });
 app.post("/addpromo",upload.single('photo'), (req,res) => {
     promo.imagename.push(req.file.filename);
-    promo.nama.push(req.body.nama);
     console.log(req.file);      
     writeFileFunc();
     res.redirect("/");
@@ -106,12 +111,13 @@ app.post("/addpromo",upload.single('photo'), (req,res) => {
 app.get("/wipealldtbs",function(req,res) {
     menu = {
         imagename: [],
-        nama: []
+        nama: [],
+        deskripsi: []
     };
     promo = {
-        imagename: [],
-        nama: []
+        imagename: []
     };
+    writeFileFunc();
     res.redirect("/");
 })
 // END OF WIPE DATABASE
