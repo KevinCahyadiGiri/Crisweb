@@ -103,7 +103,9 @@
 }
 
 .nav-item a:hover{
-	color:#000000;
+	color:#ffe0e0;
+	background-color: rgb(82, 6, 4);
+	position: auto;
 }
 
 .hamburger-inner, .hamburger-inner::before, .hamburger-inner::after, .hamburger.is-active .hamburger-inner::before, .hamburger.is-active .hamburger-inner::after, .hamburger.is-active .hamburger-inner, .hamburger.is-active .hamburger-inner::before, .hamburger.is-active .hamburger-inner::after {
