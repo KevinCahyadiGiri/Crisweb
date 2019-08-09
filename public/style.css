@@ -189,7 +189,6 @@ html {
 	}
 }
 
-<<<<<<< HEAD
 	.form{
 		padding-top : 8px;
 		padding-left : 50px;
@@ -210,20 +209,15 @@ html {
 		background-color: rgb(80, 20, 18);
 		border-color: rgb(80, 20, 18);
 	}
-=======
 .logo_pemilik{
 	margin: 10px 20px 0 20px;
 }
 .blacked {
 	background-color: rgba(0,0,0,0.6);
-<<<<<<< HEAD
 }
 
 #main_promo{
 	background-color: #95221F;
 	color: #FFC700;
 	font-family: "Forte";
-=======
->>>>>>> 41f92fe7990bfaf62999cfe8f1c52b01ed5046c0
->>>>>>> 3487c1883dcd60f3bf569b6566027fbf38caa332
 }
