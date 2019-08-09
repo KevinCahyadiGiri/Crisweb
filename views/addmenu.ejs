@@ -1,41 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 	<link href="https://fonts.googleapis.com/css?family=Lobster&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Indie+Flower&display=swap" rel="stylesheet">
-  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 	<link rel="stylesheet" type="text/css" href="hamburgers.css">
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<link rel="icon" href="logo_c.ico">
-    <title>Crisweb</title>
+	<title>Crisweb</title>
 </head>
+
 <body>
-	
+
 	<div class="top">
-		<form action='/addmenu' method='post' enctype='multipart/form-data' class="form-inline form" >
+		<form action='/addmenu' method='post' enctype='multipart/form-data' class="form-inline form">
 			<div class="form-group mb-2 ">
-					<input type="file" readonly class="form-control-plaintext" name='photo' accept='image/*'>
+				<input type="file" readonly class="form-control-plaintext" name='photo' accept='image/*'>
 			</div>
 			<div class="form-group mx-sm-3 mb-2">
 				<input type="text" name="nama" class="form-control" placeholder="Nama Menu">
 			</div>
 			<div class="form-group mx-sm-3 mb-2">
-					<input type="textarea" name="nama" class="form-control" placeholder="Nama Menu">
+				<input type="textarea" name="deskripsi" class="form-control" placeholder="Deskripsi Menu">
 			</div>
 			<button type="submit" value='upload' class="btn btn-outline-warning mb-2" id='button'>Submit</button>
-		</form>	
+		</form>
 	</div>
 
 	<div class="jumbotron" id="maintitle">
-          <img class="mx-auto my-auto d-block align-self-center" src=index.png id="logo">
+		<img class="mx-auto my-auto d-block align-self-center" src=index.png id="logo">
 	</div>
-	
+
 
 </body>
+
 </html>
