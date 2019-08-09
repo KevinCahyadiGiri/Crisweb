@@ -117,7 +117,7 @@
 	<div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
 		<div class="carousel-inner size_carousel">
 			<div class="carousel-item active">
-				<img src=<%="images/" + menu.imagename[0] %> class="d-block w-100 img-thumbnail" alt=<%= menu.nama[i] %>>
+				<img src=<%="images/" + menu.imagename[0] %> class="d-block w-100 img-thumbnail" style=" width:100%; height: 500px !important;" alt=<%= menu.nama[i] %>>
 				<div class="carousel-caption d-md-block">
 					<h5><%= menu.nama[0] %></h5>
 					<p> <%= menu.deskripsi[0] %> </p>
@@ -125,7 +125,7 @@
 			</div>
 			<% for (var i=1;i<menu.nama.length;i++) { %>
 				<div class="carousel-item">
-					<img src=<%="images/" + menu.imagename[i] %> class="d-block w-100 img-thumbnail" alt=<%= menu.nama[i] %>>
+					<img src=<%="images/" + menu.imagename[i] %> class="d-block w-100 img-thumbnail" style=" width:100%; height: 500px !important;" alt=<%= menu.nama[i] %>>
 					<div class="carousel-caption d-md-block blacked">
 						<h5><%= menu.nama[i] %></h5>
 						<p> <%= menu.deskripsi[i] %> </p>
