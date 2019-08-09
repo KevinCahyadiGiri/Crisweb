@@ -20,7 +20,7 @@
 
 <body>
 	<nav class="navbar navbar-expand-md sticky-top" id="navbar_atas">
-		<a class="navbar-brand" href="#"><img src="index.png" width=auto height=60vw></a>
+		<a class="navbar-brand" href="#"><img src="index.png" width=auto height=45vw></a>
 		<button class="navbar-toggler hamburger hamburger--elastic" type="button" data-toggle="collapse"
 			data-target="#collapsible-navbar">
 			<span class="hamburger-box">
@@ -91,7 +91,7 @@
 		<div class="container">
 			<div class="row" id="row">
 				<div class="col-sm-6 text-center">
-					<img src="filbert.png" width="40%" height="50%">
+					<img src="filbert.png" width="40%" height=auto>
 					<p>
 						<h4>Filbert</h4>
 					</p>
@@ -104,7 +104,7 @@
 					</a>
 				</div>
 				<div class="col-sm-6 text-center">
-					<img src="hafid.png" width="40%" height="50%">
+					<img src="hafid.png" width=auto height="72%"	>
 					<p>
 						<h4>Hafizh Ihsanuddin</h4>
 					</p>
@@ -129,7 +129,7 @@
 	<div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
 		<div class="carousel-inner size_carousel">
 			<div class="carousel-item active">
-				<img src=<%="images/" + menu.imagename[0] %> class="d-block w-100 img-thumbnail" alt=<%= menu.nama[i] %>>
+				<img src=<%="images/" + menu.imagename[0] %> class="d-block w-100 img-thumbnail" style=" width:100%; height: 500px !important;" alt=<%= menu.nama[i] %>>
 				<div class="carousel-caption d-md-block">
 					<h5><%= menu.nama[0] %></h5>
 					<p> <%= menu.deskripsi[0] %> </p>
@@ -137,7 +137,7 @@
 			</div>
 			<% for (var i=1;i<menu.nama.length;i++) { %>
 				<div class="carousel-item">
-					<img src=<%="images/" + menu.imagename[i] %> class="d-block w-100 img-thumbnail" alt=<%= menu.nama[i] %>>
+					<img src=<%="images/" + menu.imagename[i] %> class="d-block w-100 img-thumbnail" style=" width:100%; height: 500px !important;" alt=<%= menu.nama[i] %>>
 					<div class="carousel-caption d-md-block">
 						<h5><%= menu.nama[i] %></h5>
 						<p> <%= menu.deskripsi[i] %> </p>
@@ -167,13 +167,14 @@
 			<div class="row" id="row_2">
 				<div class="col">
 					<br>
-					<p class="font_contact"><a href="tel:+6282121214145"><img src="logo/Telpon.png" width=50vw
+					<p class="font_contact"><a href="tel:+6282121214145" target="_blank"><img src="logo/Telpon.png" width=50vw
 								height=auto></a>&nbsp 08212121415</p>
-					<p class="font_contact"><img src="logo/gmail.png" width=50vw height=auto>&nbsp
+					<p class="font_contact"><a href="https://mail.google.com/mail/u/0/#inbox?compose=CllgCJlDSlBcCdCbWVTnWMdrKkLnNtDPvNSjdGRfRpgBkrBTcQphHpVHkNsHvFwpPtjdjxSMSNB" target="_blank">
+					<img src="logo/gmail.png" width=50vw height=auto></a>&nbsp
 						geprekcrisbar@gmail.com</p>
-					<p class="font_contact"><a href="http://line.me/ti/p/%40geprekcrisbar"><img src="logo/Line.jpg"
+					<p class="font_contact"><a href="http://line.me/ti/p/%40geprekcrisbar" target="_blank"><img src="logo/Line.jpg"
 								width=50vw height=auto></a>&nbsp @geprekcrisbar</p>
-					<p class="font_contact"><a href="https://api.whatsapp.com/send?phone=6282121214145"><img
+					<p class="font_contact"><a href="https://api.whatsapp.com/send?phone=6282121214145" target="_blank"><img
 								src="logo/Whatsapp.png" width=50vw height=auto></a>&nbsp 082121214145</p>
 				</div>
 			</div>
@@ -187,17 +188,17 @@
 			<div class="col-sm-6 col-md-4 col-lg-4 text-center">
 				<div class="row">
 					<div class="col-sm-4 col-md-4 col-lg-4 text-center">
-						<a href="https://www.instagram.com/geprekcrisbar/">
+						<a href="https://www.instagram.com/geprekcrisbar/" target="_blank">
 							<img src="logo/instagram.png" width=90vw height=auto>
 						</a>
 					</div>
 					<div class="col-sm-4 col-md-4 col-lg-4 text-center">
-						<a href="https://www.facebook.com/geprekcrisbar/">
+						<a href="https://www.facebook.com/geprekcrisbar/" target="_blank">
 							<img src="logo/Facebook.png" width=90vw height=auto>
 						</a>
 					</div>
 					<div class="col-sm-4 col-md-4 col-lg-4 text-center">
-						<a href=" https://www.linkedin.com/company/ayam-geprek-crisbar/">
+						<a href=" https://www.linkedin.com/company/ayam-geprek-crisbar/" target="_blank">
 							<img src="logo/Linkedin.png" width=90vw height=auto>
 						</a>
 					</div>
