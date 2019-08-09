@@ -70,9 +70,16 @@ readFileFunc(); // read file on first load
 // HOME PAGE
 app.get("/",function(req,res) {
     readFileFunc();
-    res.render("index",{menu:menu,promo:promo});
+    res.render("index",{menu:menu});
 });
 // END OF HOME PAGE
+
+// PROMO PAGE
+app.get("/viewpromo",function(req,res) {
+    readFileFunc();
+    res.render("viewpromo",{promo:promo});
+})
+// END OF PROMO PAGE
 
 // ADD MENU
 app.get("/addmenu",function(req,res) {
