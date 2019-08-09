@@ -1,9 +1,9 @@
 #maintitle {
 	background-color: #972121;
-	margin:0 0;
-	border-radius: 0; 
-	height:88.5vh;
-	display:flex;
+	margin: 0 0;
+	border-radius: 0;
+	height: 88.5vh;
+	display: flex;
 }
 
 #logo {
@@ -14,155 +14,162 @@
 #subtitle {
 	background-color: #FFC700;
 	color: #972121;
-	padding: 50px 45px; 
+	padding: 50px 45px;
 }
 
-#judul{
+#judul {
 	padding: 120px 0px;
 	font-family: "Forte";
 }
 
-#Menu{
+#Menu {
 	background-color: #972121;
 	color: #FFC700;
-	font-family:"Forte";
+	font-family: "Forte";
 	padding: 69px 0px;
 }
 
-
-.ayam{
+.ayam {
 	max-width: 200px;
 	padding: 50px 0px;
 }
 
-@font-face{
-    font-family: Forte;
-    src: url('font/FORTE.TTF')
+@font-face {
+	font-family: Forte;
+	src: url('font/FORTE.TTF')
 }
 
 .redcolor {
 	background-color: #95221F;
 }
 
-#About_Us{
-    color:#FFC700;
-    background-color: #95221F;
-    margin:0 0;
+#About_Us {
+	color: #FFC700;
+	background-color: #95221F;
+	margin: 0 0;
 	font-family: "Forte";
 	padding-top: 71px;
 	padding-bottom: 30px;
 	font-size: 80px;
 }
 
-#Contact_Us{
-    background-color:#FFC700;
+#Contact_Us {
+	background-color: #FFC700;
 	color: #95221F;
-    margin:0 0;
+	margin: 0 0;
 	font-family: "Forte";
 	padding-bottom: 35px;
 	padding-top: 69px;
 }
 
-#content{
-    padding: 50px 45px;
-    background-color:#FFC700;
-    margin:0 0;
-    color: #95221F;
+#content {
+	padding: 50px 45px;
+	background-color: #FFC700;
+	margin: 0 0;
+	color: #95221F;
 	font-family: "Lobster", cursive;
 }
 
-#jumbotron{
-    color:"#FFC700";
-    font-family: "Forte";
+#jumbotron {
+	color: "#FFC700";
+	font-family: "Forte";
 }
 
-#content_2{
-    background-color:#FFC700;
-    color: #95221F;
+#content_2 {
+	background-color: #FFC700;
+	color: #95221F;
 }
 
-.font{
-    text-indent: 50px;
+.font {
+	text-indent: 50px;
 }
 
-.font_contact{
-    font-size: 193%;
+.font_contact {
+	font-size: 193%;
 	font-family: "Arial", cursive;
 }
 
-#bottom{
-    background-color:#95221F;
-    color: #FFC700;
-    font-size: 60px;
+#bottom {
+	background-color: #95221F;
+	color: #FFC700;
+	font-size: 60px;
 	font-family: "Arial", cursive;
 	padding: 20px;
 }
 
-#navbar_atas{
+#navbar_atas {
 	background-color: #95221F;
 }
 
-.nav-link{
-	color:#FFC700;
+.nav-link {
+	color: #FFC700;
 }
 
-.nav-item a:hover{
-	color:#ffe0e0;
+.nav-item a:hover {
+	color: #ffe0e0;
 	background-color: rgb(82, 6, 4);
 	position: auto;
 }
 
-.hamburger-inner, .hamburger-inner::before, .hamburger-inner::after, .hamburger.is-active .hamburger-inner::before, .hamburger.is-active .hamburger-inner::after, .hamburger.is-active .hamburger-inner, .hamburger.is-active .hamburger-inner::before, .hamburger.is-active .hamburger-inner::after {
+.hamburger-inner,
+.hamburger-inner::before,
+.hamburger-inner::after,
+.hamburger.is-active .hamburger-inner::before,
+.hamburger.is-active .hamburger-inner::after,
+.hamburger.is-active .hamburger-inner,
+.hamburger.is-active .hamburger-inner::before,
+.hamburger.is-active .hamburger-inner::after {
 	color: #FFC700;
 }
 
-.tempat_ayam{
+.tempat_ayam {
 	border: 1px solid black;
 }
 
-.gambar_ayam{
-	padding: 50px 0px; 
+.gambar_ayam {
+	padding: 50px 0px;
 	width: 60%;
 	max-width: 200px;
 	height: auto;
 }
 
-.tulisan_transparan{
+.tulisan_transparan {
 	position: absolute;
 	width: 100%;
 	border: 1px solid blue;
-	top : 50%;
+	top: 50%;
 	z-index: 1;
 	opacity: 0;
 }
 
-.tempat_ayam:hover .tulisan_transparan{
-	opacity: 1;	
+.tempat_ayam:hover .tulisan_transparan {
+	opacity: 1;
 }
+
 html {
 	scroll-behavior: smooth;
-  }
-.tempat_ayam:hover .gambar_ayam{
-	opacity:0.5;
+}
+
+.tempat_ayam:hover .gambar_ayam {
+	opacity: 0.5;
 }
 
 .size_carousel {
 	padding-left: 20%;
 	padding-right: 20%;
-	height:100%;
-	width:auto;
-	background-color:#95221F;
+	height: 100%;
+	width: auto;
+	background-color: #95221F;
 }
 
 @media only screen and (max-width: 600px) {
-	body {
-	  
-	}
+	body {}
+
 	.size_carousel {
 		padding-left: 0%;
 		padding-right: 0%;
-		height:100%;
-		width:auto;
+		height: 100%;
+		width: auto;
 	}
 
 	.padbot {
@@ -170,7 +177,7 @@ html {
 	}
 
 	.blacked {
-		font-size: 75%; 
+		font-size: 75%;
 	}
 
 	.shrink {
@@ -184,39 +191,43 @@ html {
 }
 
 @media screen and (max-width: 600px) {
-	.font_contact{
-		font-size : 120%;
+	.font_contact {
+		font-size: 120%;
 	}
 }
 
-	.form{
-		padding-top : 8px;
-		padding-left : 50px;
-	}
+.form {
+	padding-top: 1%;
+	padding-left: 5%;
+}
 
-	#button{
-		color:rgb(0,0,0);
-		border-style: solid;
-		border-color:rgb(80, 20, 18);
-		font-weight: bold;
-	}
+#button {
+	color: rgb(0, 0, 0);
+	border-style: solid;
+	border-color: rgb(80, 20, 18);
+	font-weight: bold;
+}
 
-	.top{
-		background-color:#FFC700;
-	};
+.top {
+	background-color: #FFC700;
+}
 
-	.button:hover {
-		background-color: rgb(80, 20, 18);
-		border-color: rgb(80, 20, 18);
-	}
-.logo_pemilik{
+;
+
+.button:hover {
+	background-color: rgb(80, 20, 18);
+	border-color: rgb(80, 20, 18);
+}
+
+.logo_pemilik {
 	margin: 10px 20px 0 20px;
 }
+
 .blacked {
-	background-color: rgba(0,0,0,0.6);
+	background-color: rgba(0, 0, 0, 0.6);
 }
 
-#main_promo{
+#main_promo {
 	background-color: #95221F;
 	color: #FFC700;
 	font-family: "Forte";
