@@ -83,6 +83,7 @@ app.get("/addmenu",function(req,res) {
 app.post("/addmenu",upload.single('photo'), (req,res) => {
     menu.imagename.push(req.file.filename);
     menu.nama.push(req.body.nama);
+    menu.deskripsi.push(req.body.deskripsi);
     console.log(req.file);
     writeFileFunc();
     res.redirect("/");
@@ -95,7 +96,6 @@ app.get("/addpromo",function(req,res) {
 });
 app.post("/addpromo",upload.single('photo'), (req,res) => {
     promo.imagename.push(req.file.filename);
-    promo.nama.push(req.body.nama);
     console.log(req.file);      
     writeFileFunc();
     res.redirect("/");
@@ -106,12 +106,13 @@ app.post("/addpromo",upload.single('photo'), (req,res) => {
 app.get("/wipealldtbs",function(req,res) {
     menu = {
         imagename: [],
-        nama: []
+        nama: [],
+        deskripsi: []
     };
     promo = {
-        imagename: [],
-        nama: []
+        imagename: []
     };
+    writeFileFunc();
     res.redirect("/");
 })
 // END OF WIPE DATABASE
