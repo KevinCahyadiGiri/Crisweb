@@ -133,7 +133,9 @@
 .tempat_ayam:hover .tulisan_transparan{
 	opacity: 1;	
 }
-
+html {
+	scroll-behavior: smooth;
+  }
 .tempat_ayam:hover .gambar_ayam{
 	opacity:0.5;
 }
