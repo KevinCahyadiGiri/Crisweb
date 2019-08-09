@@ -138,3 +138,23 @@
 	opacity:0.5;
 }
 
+.size_carousel {
+	padding-left: 20%;
+	padding-right: 20%;
+	height:100%;
+	width:auto;
+	background-color:#95221F;
+}
+
+@media only screen and (max-width: 600px) {
+	body {
+	  
+	}
+	.size_carousel {
+		padding-left: 0%;
+		padding-right: 0%;
+		height:100%;
+		width:auto;
+	}
+}
+
