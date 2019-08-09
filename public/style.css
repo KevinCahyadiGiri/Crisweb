@@ -168,6 +168,9 @@ html {
 	}
 }
 
+.logo_pemilik{
+	margin: 10px 20px 0 20px;
+}
 .blacked {
 	background-color: rgba(0,0,0,0.6);
 }
