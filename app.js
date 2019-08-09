@@ -27,11 +27,11 @@ app.use(express.static("public"));
 // VARIABLES
 var menu = {
     imagename: [],
-    nama: []
+    nama: [],
+    deskripsi: []
 };
 var promo = {
-    imagename: [],
-    nama: []
+    imagename: []
 };
 // END OF VARIABLES
 
