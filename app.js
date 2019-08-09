@@ -29,6 +29,10 @@ var menu = {
     imagename: [],
     nama: []
 };
+var promo = {
+    imagename: [],
+    nama: []
+};
 // END OF VARIABLES
 
 // READ AND WRITE FILES
@@ -41,11 +45,23 @@ function readFileFunc() {
         }
         console.log(menu);
     });
+    fs.readFile('database/promo.json','utf8',function (err,data) {
+        if (err) {
+            console.log(err);
+        } else {
+            promo = JSON.parse(data);
+        }
+        console.log(promo);
+    });
 }
 
 function writeFileFunc() {
     var json = JSON.stringify(menu);
     fs.writeFile('database/menu.json',json,'utf8',function(req,res) {
+        console.log(json);
+    });
+    json = JSON.stringify(promo);
+    fs.writeFile('database/promo.json',json,'utf8',function(req,res) {
         console.log(json);
     });
 }
@@ -56,7 +72,7 @@ readFileFunc(); // read file on first load
 // HOME PAGE
 app.get("/",function(req,res) {
     readFileFunc();
-    res.render("index",{menu:menu});
+    res.render("index",{menu:menu,promo:promo});
 });
 // END OF HOME PAGE
 
@@ -72,6 +88,33 @@ app.post("/addmenu",upload.single('photo'), (req,res) => {
     res.redirect("/");
 });
 // END OF ADD MENU
+
+// ADD PROMO
+app.get("/addpromo",function(req,res) {
+    res.render("addpromo");
+});
+app.post("/addpromo",upload.single('photo'), (req,res) => {
+    promo.imagename.push(req.file.filename);
+    promo.nama.push(req.body.nama);
+    console.log(req.file);      
+    writeFileFunc();
+    res.redirect("/");
+});
+// END OF ADD PROMO
+
+// WIPE ALL DATABASE
+app.get("/wipealldtbs",function(req,res) {
+    menu = {
+        imagename: [],
+        nama: []
+    };
+    promo = {
+        imagename: [],
+        nama: []
+    };
+    res.redirect("/");
+})
+// END OF WIPE DATABASE
 
 app.listen(3000, function() {
   console.log("Server started on port 3000");
