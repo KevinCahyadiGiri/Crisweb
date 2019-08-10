@@ -1,5 +1,10 @@
 # Crisweb
 A simple dynamic webpage for Crisbar. Additional features may be added in the future.
+## Easy Start
+Simply go to "crisweb-id.herokuapp.com".
+# Anything below this is for developers who want to test the webpage in their ownsystem.
+
+
 ## Prerequisites
 * NodeJS
 ## Getting Started
